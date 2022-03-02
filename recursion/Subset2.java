@@ -7,7 +7,7 @@ import java.util.List;
 public class Subset2 {
 
     public List<List<Integer>> subsetsWithDup(int[] arr) {
-        Arrays.sort(arr);
+        Arrays.sort(arr); // sort before to check duplicate elements
         List<List<Integer>> ans = new ArrayList<>();
         subset(arr, 0, ans, new ArrayList<>());
         return ans;
@@ -17,7 +17,7 @@ public class Subset2 {
         ans.add(new ArrayList<>(list));
         for (int i = n; i < arr.length; i++) {
             if (i != n && arr[i - 1] == arr[i]) {
-                continue;
+                continue; // moving forward and not adding duplicate elements
             }
             list.add(arr[i]);
             subset(arr, i + 1, ans, list);
