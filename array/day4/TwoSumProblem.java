@@ -9,8 +9,6 @@ public class TwoSumProblem {
         int[] arr = new int[2];
         int[] copy = Arrays.copyOf(nums, nums.length);
         Arrays.sort(copy);
-        System.out.println(Arrays.toString(copy));
-        System.out.println(Arrays.toString(nums));
         int l = 0, r = nums.length - 1;
         int num1 = Integer.MIN_VALUE, num2 = Integer.MIN_VALUE;
         while (l < r) {
@@ -22,7 +20,6 @@ public class TwoSumProblem {
                 l++;
             } else r--;
         }
-        System.out.println(num1 + "  " + num2);
 
         int i = 0;
         for (; i < nums.length; i++) {
@@ -39,6 +36,8 @@ public class TwoSumProblem {
         return arr;
     }
 
+    // TC - O(nlogn) SC - O(n)
+
     public int[] twoSumUsingHashing(int[] nums, int target) {
         HashMap<Integer, Integer> h = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -49,6 +48,8 @@ public class TwoSumProblem {
         }
         return new int[]{};
     }
+
+    // TC - O(n) SC - O(n)
 
     public static void main(String[] args) {
         TwoSumProblem obj = new TwoSumProblem();
