@@ -1,4 +1,4 @@
-package stackAndQueue;
+package stackAndQueue.day1;
 
 import java.util.Stack;
 
