@@ -1,6 +1,5 @@
-package dynamicProgramming;
+package dynamicProgramming.day1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LongestIncreasingSubsequence {
