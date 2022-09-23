@@ -1,4 +1,4 @@
-package binaryTree;
+package binaryTree.day1;
 
 import java.util.*;
 

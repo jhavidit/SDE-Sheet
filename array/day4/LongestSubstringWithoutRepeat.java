@@ -53,7 +53,6 @@ public class LongestSubstringWithoutRepeat {
                     startIndex = hm.get(ch) + 1;
                     hm.put(ch, i);
                     c = i - startIndex + 1;
-
                 }
             }
         }
